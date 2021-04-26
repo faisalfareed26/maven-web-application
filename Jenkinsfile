@@ -15,6 +15,6 @@ pipeline {
 
   }
   environment {
-    mavenHome = '/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6.3'
+    mavenHome = '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6.3'
   }
 }

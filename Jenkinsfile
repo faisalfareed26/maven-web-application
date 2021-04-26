@@ -1,15 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Get Code from git') {
+    stage('checkout code') {
       steps {
-        git(url: 'https://github.com/faisalfareed26/maven-web-application.git', branch: 'development', credentialsId: 'GitHub_Credentials', poll: true)
-      }
-    }
-
-    stage('Build') {
-      steps {
-        sh "${mavenHome}/bin/clean package"
+        git(url: 'https://github.com/faisalfareed26/maven-web-application.git', branch: 'developement', credentialsId: 'GitHub_Credentials', poll: true)
       }
     }
 

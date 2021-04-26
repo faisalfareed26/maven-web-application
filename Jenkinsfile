@@ -9,12 +9,12 @@ pipeline {
 
     stage('Build') {
       steps {
-          sh"${mavenHome}/bin/mvn clean package"
+        sh "${mavenHome}/bin/mvn clean package"
       }
     }
 
   }
   environment {
-    mavenHome = '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6.3'
+    mavenHome = '/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6.3'
   }
 }

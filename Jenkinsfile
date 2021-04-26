@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'mvn clean package'
+        sh 'sh \'${mavenHome}/bin/mvn clean package'
       }
     }
 
